@@ -9,7 +9,7 @@ class Program106
            int c=count;
           for(int j=i;j<n;j++)
           {
-             System.out.print("_\t");
+             System.out.print("\t");
           }
           for(int j=i;j>=1;j--)
           {
@@ -22,3 +22,11 @@ class Program106
     }
 
 }
+
+/*
+                                15
+                        14      13
+                12      11      10
+        9       8       7       6
+5       4       3       2       1
+*/

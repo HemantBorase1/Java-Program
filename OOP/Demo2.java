@@ -39,8 +39,5 @@ class Demo2
           return rev;
    }
 
-    int checkPalindromNum(int n)
-   {
-
-   }
+   
 }

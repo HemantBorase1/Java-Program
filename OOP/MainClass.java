@@ -15,6 +15,12 @@ class MainClass
        
        System.out.println("\nAppend Two Number at First:"+d1.appendTwoDigit(55,1234));
        System.out.println("\nReverse of a Number:"+d1.reverseNumber(7849));
+       
+       Demo3 d3=new Demo3();
+       System.out.println("\nCheck Palindrome:"+d3.checkPalindrome(121));
+
+       System.out.println("\n PrimeNumber:"+d3.checkPrime(123));
            
+       System.out.println("\n Perfect Number:"+d3.checkPerfect(496));
     }
 }

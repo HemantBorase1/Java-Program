@@ -22,5 +22,7 @@ class MainClass
        System.out.println("\n PrimeNumber:"+d3.checkPrime(123));
            
        System.out.println("\n Perfect Number:"+d3.checkPerfect(496));
+
+       System.out.println("\n Strong Number:"+d3.checkStrong(145));
     }
 }

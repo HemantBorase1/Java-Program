@@ -34,6 +34,137 @@ class Demo4
          }
       return sum==n;
    }
+  
+   
+  Boolean checkPerfectSquare(int n)
+  {
+    boolean b=false;
+      for(int i=1;i<=n/2;i++)
+      {
+              if(i*i==n)
+              {
+              b=true;
+              break;
+              }
+        
+      }
+    return b;
+  }
+ 
+  Boolean checkPerfectCube(int n)
+  {
+       boolean b=false;
+       if(n==0||n==1)
+       {
+               b=true;
+        }
+       else
+       {
+              for(int i=1;i<=n/2;i++)
+              {
+                   if(i*i*i==n)
+                   {
+                     b=true;
+                     break;
+                   }
+              }
+       }
+     return b;
+  }
+ 
+   boolean checkPrime(int n)
+   {
+       boolean b=false;
+       if(n==0||n==1)
+       {
+           b=true;
+       }
+       else
+       {
+              for(int i=2;i<=Math.sqrt(n);i++)
+              {
+                   if(n%i==0)
+                   {
+                     b=true;
+                     break;
+                   }
+              }
+       }
+      return !b;
+   }
+   
+   
+
+  boolean checkPrimeAndTwist(int n)
+  {
+     if(checkPrime(n))
+          if(checkPrime(reverseNumber(n)))
+              return true;
+     return false;
+  }
+
+  int reverseNumber(int n)
+  {
+        int sum=0;
+        while(n!=0)
+        {
+           sum*=10;
+           sum+=n%10;
+           n/=10;
+
+        }
+     return sum;
+  }
+   
+  int reverseDigit(int n)
+  {
+         int sum=0;
+         while(n!=0)
+         {
+           sum+=n%10;
+            n/=10;
+           if (n != 0)   
+            sum *= 10;
+         }
+      return sum;
+  }
+
+  boolean checkPalindrom(int n)
+  {
+          int temp=n;
+          boolean b=false;
+          if(reverseDigit(temp)==n)
+          {
+             b=true;
+          }
+       return b;
+  }
+  
+    int findNthArmStrong(int last)
+  {
+            int count=0,a=0;
+            while(true)
+            {
+              if(checkArmStrong(a))
+                  count++;
+              if(count==last)
+                   break;
+            a++;
+            }
+        return a;
+  }
+
+  boolean findNthPalindromicPrime(int n)
+ {
+     int count=0,a=0;
+     while(true)
+     {
+          if(checkPalindrom(n))
+              if(checkPrime(n))
+                 return true;
+        return false;
+     }
+ }
 
    
 }

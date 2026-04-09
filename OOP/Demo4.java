@@ -166,5 +166,55 @@ class Demo4
      }
  }
 
+ int addNum(int n)
+ {
+     int sum=0;
+    while(n>0)
+    {
+       int digit=n%10;
+       sum+=digit;
+       n/=10;
+    }
+   return sum;
+ }
+
+
+boolean checkNumContainSum(int n)
+{
+        boolean b=false;
+        int sum=addNum(n);
+        int count=0;
+        int a=0;
+       while(sum!=0)
+       {
+           int digit=sum%10;
+           sum/=10;
+           count++;
+       }
+      if(count>=3)
+      {
+           a=n%1000;
+      }
+      else if(count>=2)
+      {
+           a=n%100;
+      }
+      else
+      {
+           a=n%10;
+      }
+     while(n>0)
+     {
+         int temp=n%a;
+         if(temp==sum)
+         {
+            b=true;
+            break;
+         }
+       n/=a;
+     }
+  return b;
+} 
+
    
 }

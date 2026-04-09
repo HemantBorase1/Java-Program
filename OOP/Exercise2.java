@@ -19,6 +19,10 @@ class Exercise2
            System.out.println("Reverse Number: "+d1.reverseDigit(123));
 
           System.out.println("FindNthPalindromicPrime:"+d1.findNthPalindromicPrime(781));
+ 
+          System.out.println("Sum of Number: "+d1.addNum(5410));
+          
+          System.out.println("CheckNumContainSum: "+d1.checkNumContainSum(1234));
           
      }
 }

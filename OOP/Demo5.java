@@ -29,6 +29,16 @@ int factorial(int n)
     return n * factorial(n - 1);
 }
 
+  int maxDigit(int n)
+  {
+        int max=n%10;
+        if(max>n)
+        {
+               return max;
+        }
+       return max<maxDigit(n/10);
+  }
+
  
 
 }

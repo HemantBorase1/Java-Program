@@ -21,3 +21,6 @@ class Demo
 	   System.out.println("\n Sum of Product of Array:"+sum);
 	}
 }
+
+
+

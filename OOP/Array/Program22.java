@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Program22
 {
 
@@ -7,14 +8,17 @@ class Program22
           int b[]={11,22,33,44,55};
           int c[]=new int[a.length+b.length];
     
-          if(a.length<=b.length)
+          if(a.length<b.length)
           {
-                for(int i=0;i<c.length;i++)
+                for(int i=0;i<a.length;i++)
                 {
                     if(a[i]<b[i])
                     {
+                            
                         c[i]=a[i];
                         c[i+1]=b[i];
+                        
+                       
                     }
                     else
                     {
@@ -23,5 +27,6 @@ class Program22
                     }
                 }
           }
+        System.out.println(Arrays.toString(c));
     }
 }

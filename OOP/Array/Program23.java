@@ -1,7 +1,7 @@
 import java.util.Arrays;
 class Program22
 {
-
+// Find Another Solution Well Optimized
     public static void main(String[] args)
     {
           int a[]={10,20,30,40};

@@ -72,6 +72,32 @@ At index 2, the character is already 'l'
      */
    // lastIndexOf(String)
    System.out.println("Hello".lastIndexOf("l"));
+
+  // 6.SubStrings
+  // substring(int begin)
+  System.out.println("hello".substring(2));
+
+  // substring(int begin,int end)
+  System.out.println("hello".substring(1,4));
+  
+  // subSequence(int,int)
+  System.out.println("hello".subSequence(1,3));
+
+   // 7.Combining & Modifying
+   // concat(String)
+   System.out.println("Hi".concat("Java"));
+
+   // replace(char old,char new)
+   System.out.println("apple".replace('p','b'));
+
+   // replace(CharSequence, CharSequence)
+   System.out.println("Hello".replace("ll","yy"));
+
+   // replaceFirst(regex, new)
+   System.out.println("a1b2".replaceFirst("\\d","X"));
+
+   // replaceAll(regex,new)
+   System.out.println("a1b2".replaceAll("\\d",""));
      
     }
 }

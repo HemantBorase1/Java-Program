@@ -99,5 +99,41 @@ At index 2, the character is already 'l'
    // replaceAll(regex,new)
    System.out.println("a1b2".replaceAll("\\d",""));
      
+
+  // 8.Checking Content
+   
+   // contains(charSequence)
+   System.out.println("hello".contains("ell"));
+/*
+  // 9. Splitting & Joining
+  // split(String regex)
+   System.out.println("a,b,c".split(","));
+  
+  // split(String regex, int limit)
+  System.out.println("a,b,c".split(",",2));
+  
+   // join(CharSequence delimiter, ...)
+  //  System.out.println("-","A","B","C"); -- Check it Later
+*/
+   // 10.Case Conversion
+   System.out.println("JAVA".toLowerCase());
+ 
+   System.out.println("java".toUpperCase());
+ 
+    // 11.Whitespace Handling
+    System.out.println(" Abc ".trim());
+
+    // 2.strip()
+    System.out.println(" Abc ".strip());
+    
+    // 3.stripLeading()
+    System.out.println(" hi".stripLeading());
+   
+    // 4.stripTrailing()
+   System.out.println("hi ".stripTrailing());
+ 
+    // 5.isBlank()
+    System.out.println(" ".isBlank());
+  
     }
 }

@@ -134,6 +134,37 @@ At index 2, the character is already 'l'
  
     // 5.isBlank()
     System.out.println(" ".isBlank());
+
+    // 12.Advanced Text Processing
+    // indent(int n)
+     System.out.println("Hello".indent(1));
+
+    // stripIndent()
+    System.out.println(" Hello".stripIndent());
   
+    // 13.Conversion
+     // 1. toCharArray()
+    System.out.println("abc".toCharArray());
+ 
+    // 2.valueOf(...)
+     System.out.println(String.valueOf(100));
+
+    // 3.copyValueOf(char[])
+    char[] arr={'J','a','v','a'};
+     System.out.println(String.copyValueOf(arr));
+
+    // 14. Misc
+    // 1.hashCode()
+
+    System.out.println("abc".hashCode());
+
+   // 2.intern()
+
+    String s=new String("java").intern();
+    // Store in string pool . It Helps to Reduce High Memory Consumption
+   
+   // 3.toString()
+   System.out.println("Hello".toString());
+    
     }
 }

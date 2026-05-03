@@ -50,5 +50,28 @@ So "apple" is considered greater than "APPLE"
     // endsWith(String)
     System.out.println("Java".endsWith("va")); 
           
+    // Searching
+    // indexOf(int / String)
+    System.out.println("hello".indexOf("l"));
+    
+     // indexOf(String,fromIndex)
+    System.out.println("Hello".indexOf("l",1));
+     
+     /*
+        Let’s walk through this version:
+
+🔹 Code:
+System.out.println("Hello".indexOf("l", 2));
+🔹 String with indexes:
+H  e  l  l  o
+0  1  2  3  4
+🔹 What changes here?
+Now the search starts from index 2
+At index 2, the character is already 'l'
+
+     */
+   // lastIndexOf(String)
+   System.out.println("Hello".lastIndexOf("l"));
+     
     }
 }

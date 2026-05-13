@@ -1,4 +1,4 @@
-class Demo2
+class Demo2 extends Demo1
 {
   int a=100;
    void m1()

@@ -1,4 +1,4 @@
-class Demo3
+class Demo3 extends Demo2
 {
 
   int a=10;

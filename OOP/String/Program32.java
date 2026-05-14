@@ -7,11 +7,11 @@ class Program32
           StringBuilder sb=new StringBuilder();
           for(int i=0;i<str.length();i++)
           {
-             sb.append(i);
+             sb.append(str.charAt(i));
           }
           for(int i=0;i<str.length();i++)
           {
-               for(int j=i+1;j<str.length();j++)
+               for(int j=i+1;j<str.length()-1;j++)
                {
                      if(str.charAt(i)==str.charAt(j))
                      {

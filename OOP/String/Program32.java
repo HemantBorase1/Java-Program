@@ -1,25 +1,23 @@
 class Program32
 {
-
     public static void main(String[] args)
     {
-          String str="w3resource";
-          StringBuilder sb=new StringBuilder();
-          for(int i=0;i<str.length();i++)
-          {
-             sb.append(str.charAt(i));
-          }
-          for(int i=0;i<str.length();i++)
-          {
-               for(int j=i+1;j<str.length()-1;j++)
-               {
-                     if(str.charAt(i)==str.charAt(j))
-                     {
-                           sb.deleteCharAt(j);
-                     } 
-               }
-          }
-         String str2=sb.toString();
-         System.out.println(str2);
+        String str = "w3resource";
+
+        StringBuilder sb = new StringBuilder(str);
+
+        for(int i = 0; i < sb.length(); i++)
+        {
+            for(int j = i + 1; j < sb.length(); j++)
+            {
+                if(sb.charAt(i) == sb.charAt(j))
+                {
+                    sb.deleteCharAt(j);
+                    j--;
+                }
+            }
+        }
+
+        System.out.println(sb);
     }
 }

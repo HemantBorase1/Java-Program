@@ -5,9 +5,9 @@ class Pattern2
     {
           for(int i=0;i<=5;i++)
           {
-                for(int j=5;j>=i;i++)
+                for(int j=5;j>=i;j--)
                 {
-                     System.out.println("*");
+                     System.out.print("*");
                  }
             System.out.println();
           }

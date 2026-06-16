@@ -7,7 +7,7 @@ class Pattern10
            {
                    for(int j=i;j<=5;j++)
                    {
-                        System.out.print(i);
+                        System.out.print(j);
                    }
                System.out.println();
            }

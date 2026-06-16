@@ -7,7 +7,7 @@ class Pattern11
          {
                for(int j=1;j<=i;j++)
                {
-                    System.out.println((char)(j+64));
+                    System.out.print((char)(j+64));
                }
              System.out.println();
          }

@@ -9,7 +9,11 @@ class MainClass
      d1.a=120;
      d1.display();
 
-// 
+// For Frequent use of these package class we uses the import + Qualified Name;
+// Example: import a.b.demo;
+    demo d2=new demo();
+    d2.a=400;
+    d2.display();
     
    }
 }

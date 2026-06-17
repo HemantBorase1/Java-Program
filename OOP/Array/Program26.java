@@ -31,6 +31,6 @@ class Program26
        int avg=sum/count;
          
        System.out.println("Maximum Value :"+max+"\t Minimum value:"+min);
-       System.out.println("Average Element Except Min & Max"+avg);
+       System.out.println("Average Element Except Min & Max :\t"+avg);
     }
 }

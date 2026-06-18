@@ -1,10 +1,10 @@
-class Reading extends Thread
+class Reading implements Runnable
 {
     public void bookReading()
     {
            for(int i=1;i<=10;i++)
            {
-              System.out.println("bookReading");
+              System.out.println("book Reading");
            }
     }
     public void run()

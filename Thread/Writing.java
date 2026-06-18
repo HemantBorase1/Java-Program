@@ -1,10 +1,10 @@
-class Writing extends Thread
+class Writing implements Runnable
 {
     public void bookWriting()
     {
            for(int i=1;i<=10;i++)
            {
-              System.out.println("bookWriting");
+              System.out.println("book Writing");
            }
     }
     public void run()

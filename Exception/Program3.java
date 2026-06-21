@@ -11,6 +11,7 @@ class Program3
            {
                 e.printStackTrace();
                 System.out.println(e.getMessage());
+                System.out.println(e.toString());
            }
     }
 }

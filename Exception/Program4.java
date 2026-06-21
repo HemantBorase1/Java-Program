@@ -5,13 +5,20 @@ class Program4
    {
            try
            {
-                System.out.println(10/0);
-                int arr[]={10,20,30};
-                System.out.println(arr[3]);
+            System.out.println("Statement-1");
+            System.out.println(10 / 0);    // ArithmeticException
+            System.out.println("Statement-2");
+            
+            int arr[] = {10, 20, 30};
+            System.out.println(arr[3]);
            }
-           catch(ArthmeticException e)
+           catch(ArithmeticException e)
            {
                   System.out.println(e);
+           }
+           catch(ArrayIndexOutOfBoundsException e)
+           {
+                 System.out.println(e);
            }
            catch(Exception e)
            {

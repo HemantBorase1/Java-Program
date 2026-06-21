@@ -3,7 +3,7 @@ class Problem8
 
     public static void main(String[] args)
     {
-          int n=1956;
+          int n=9780;
           int max=0;
           while(n!=0)
           {

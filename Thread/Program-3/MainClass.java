@@ -12,6 +12,10 @@ class MainClass
          Thread t2=new Thread(u2);
          Thread t3=new Thread(u3);
          Thread t4=new Thread(u4);
+         t1.setName("gaurav");
+         t2.setName("saurav");
+         t3.setName("raghav");
+         t4.setName("arav");
          t1.start();
          t2.start();
          t3.start();

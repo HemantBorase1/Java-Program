@@ -16,7 +16,7 @@ class Site
        }
        else
        {
-             System.out.println("Sorry "+t.getName()+"ticket booked already.");
+             System.out.println("Sorry "+t.getName()+" ticket booked already.");
         }
    }
 }

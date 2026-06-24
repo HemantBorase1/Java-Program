@@ -10,6 +10,6 @@ class User implements Runnable
    {}
     public void run()
     {
-      s.doReservation
+      s.doReservation();
     }
 }

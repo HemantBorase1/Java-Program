@@ -14,12 +14,12 @@ class Site
            if(!booked)
            {
                 for(int i=0;i<=10;i++)
-                    System.out.println(t.getName()"\t Payment Processing");
+                    System.out.println(t.getName()+"\t Payment Processing");
                 booked=true;
                     System.out.println(t.getName()+"\t Your Ticked is Booked Successfully.");
            }
            else
-               System.out.println("Sorry"+t.getName()+"ticket booked already");
+               System.out.println("Sorry "+t.getName()+"\t ticket booked already");
       }
    }
 }

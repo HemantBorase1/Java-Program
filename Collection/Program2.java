@@ -16,7 +16,7 @@ class Program2
               System.out.println(list.get(i));
 
          for(Object o:list)
-             System.out.println(s);
+             System.out.println(o);
          
     }
 }

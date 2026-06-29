@@ -9,13 +9,14 @@ class Problem17
           {
                if(arr[i]==0)
                {
-                   int temp=arr[i];
-                   arr[i]=arr[i+1];
-                   arr[i+1]=temp;
-                   if(arr[len]==0)
-                   {
-                      break;
-                   }
+                  
+                  for(int j=i;j<arr.length-1;j++)
+                  {
+                       int temp=arr[j];
+                       arr[j]+=arr[j+1];
+                       arr[j+1]=temp;
+                  }
+                 
                }
           }
          for(int i=0;i<arr.length;i++)

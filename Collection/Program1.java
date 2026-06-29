@@ -10,5 +10,10 @@ class Program1
         list.add("Lala");
         list.add(34);
         System.out.println(list);
+  
+        String s1=list.get(0);
+        System.out.println(s1);
+ 
+        
     }
 }

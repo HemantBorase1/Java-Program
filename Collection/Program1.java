@@ -4,7 +4,7 @@ class Program1
 
     public static void main(String[] args)
     {
-         ArrayList <Object> list=new ArrayList();
+        ArrayList <Object> list=new ArrayList();
         list.add("Pratik");
         list.add("Hemant");
         list.add("Lala");

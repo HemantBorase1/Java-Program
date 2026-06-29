@@ -14,5 +14,9 @@ class Program2
         
          for(int i=0;i<list.size();i++)
               System.out.println(list.get(i));
+
+         for(Object o:list)
+             System.out.println(s);
+         
     }
 }

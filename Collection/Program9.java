@@ -11,6 +11,8 @@ class Program9
             ls.add(10);
             ls.add("Ketan");
             ls.add("Chetan");
+            ls.add("Ketan");
+
             System.out.println(ls);
      }
 }

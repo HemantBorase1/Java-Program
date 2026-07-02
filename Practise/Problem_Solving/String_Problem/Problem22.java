@@ -17,6 +17,6 @@ class Problem22
                    newStr+=c;
                }
          }
-        System.out.println(newStr);
+        System.out.println("New String:"+newStr);
      }
 }

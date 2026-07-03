@@ -8,6 +8,7 @@ public class Program11 {
         // Producer
         new Thread(() -> {
             try {
+
                 System.out.println("Producer: Sending Java");
                 queue.put("Java"); // Waits until consumer receives it
                 System.out.println("Producer: Sent");

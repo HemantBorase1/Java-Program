@@ -15,10 +15,10 @@ class Problem25
        }
        while(n2!=0)
        {
-           int digit=n%10;
+           int digit=n2%10;
            sum+=Math.pow(digit,count);
            count--;
-           n/=10;
+           n2/=10;
        }
       if(temp==sum)
       {

@@ -4,7 +4,7 @@ class Problem26
       public static void main(String[] args)
       {
             int n=5829746;
-            int max=3;
+            int max=1;
             while(n!=0)
             {
                  int digit=n%10;
@@ -16,6 +16,7 @@ class Problem26
                     }
                    
                  }
+                n/=10;
                 
             }
            System.out.println(max);

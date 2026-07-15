@@ -12,6 +12,7 @@ class Problem6
                   {
                       min=digit;
                   }
+                 n/=10;
             }
            System.out.println(min);
      }

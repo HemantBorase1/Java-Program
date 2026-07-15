@@ -10,9 +10,9 @@ class Problem5
           {
                int prod=1;
                int digit=n%10;
-               if(digit!=0){
-                   prod*=digit;
-                   digit--;
+               for(int i=1;i<=digit;i++)
+               {
+                   prod=prod*i;
                }
               sum+=prod;
            n/=10;

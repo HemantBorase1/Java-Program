@@ -20,6 +20,5 @@ class Problem12
          {
              System.out.println("Not Harshad Number");
          }
-
     }
 }

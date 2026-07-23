@@ -1,29 +1,24 @@
-class Problem17
-{
+public class Problem17 {
+    public static void main(String[] args) {
 
-     public static void main(String[] args)
-     {
-         int n=987978;
-         int Max=3;
-         int SecondMax=2;
-         while(n!=0)
-         {
-             int digit=n%10;
-             if(digit>Max)
-             {
-                Max=digit;
-                SecondMax=Max;
-                n/=10;
-             }else if(digit<Max )
-             {
-                 SecondMax=digit;
-                 n/=10;
-             }
-             else
-             {
-                 n/=10;
-             }
-         }
-         System.out.println("Max:"+Max+"\t"+"Second Max:"+SecondMax);
-     }
+        int n = 987978;
+        int max = -1;
+        int secondMax = -1;
+
+        while (n != 0) {
+            int digit = n % 10;
+
+            if (digit > max) {
+                secondMax = max;
+                max = digit;
+            } else if (digit > secondMax && digit != max) {
+                secondMax = digit;
+            }
+
+            n /= 10;
+        }
+
+        System.out.println("Max: " + max);
+        System.out.println("Second Max: " + secondMax);
+    }
 }

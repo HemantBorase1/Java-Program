@@ -5,31 +5,22 @@ class Program17
     {
           String str1="programming";
           String str2="program";
-          Boolean b=false;
-          int count=0;
-          for(int i=0;i<str2.length();i++)
+          boolean isPrefix=true;
+          if(str2.length()>str1.length())
           {
-               if(str2.charAt(i)==str1.charAt(i))
+                isPrefix=false;
+          }
+          else
+          {
+               for(int i=0;i<str2.length();i++)
                {
-                     b=true;
-                     count++;
-               }
-               else
-               {
-                    if(count==0)
-                    {
-                         b=false;
-                         break;
-                    }
+                  if(str1.charAt(i)!=str2.charAt(i))
+                  {
+                       isPrefix=false;
+                       break;
+                  }
                }
           }
-         if(b)
-         {
-             System.out.println("Yes");
-         }
-         else
-         {
-             System.out.println("No");
-          }
+         System.out.println(isPrefix ? "Yes":"No");
     }
 }

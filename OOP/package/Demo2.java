@@ -7,5 +7,6 @@ class Demo2
        Student s=new Student();
        System.out.println(s.salary);
       // System.out.println(s.city);
+       s.display();
    }
 }
